@@ -14,26 +14,29 @@
     <title> Escape</title>
   </head>
   <body>
-  	<div class="container-fluid bg-light">
-  		<h1 class="text-center text-light bg-dark display-4"><span class="tiempo">01 : 23 : 45</span></h1>
+    <div id="boton_question" class="container bg-dark" >
+      <img id= "question_img"class="img-fluid" style=" max-width:100%; height:auto" src="img/question_bw.jpg">
+    </div>
+  	<div id = "main_container" class="container-fluid bg-light">
+  		<h1 class="text-center text-light bg-dark display-4"><span id="tiempo">XX : XX : XX</span></h1>
   		<div>
   			<div class="espacio lado_abajo text-center col-xl-3">
   				<h4>Enigma 1</h4>
   				<div class="row justify-content-center">
   					<div class="col-2 text-right">
-  						<input class="e1i1 form-control-lg" type="text" size="1" maxlength="1"> 
+  						<input id="e1i1" class="form-control-lg" type="text" size="1" maxlength="1"> 
   					</div>
   					<div class="col-2 text-left">
-  						<input class="e1i2 form-control-lg" type="text" size="1" maxlength="1">
+  						<input id="e1i2" class="form-control-lg" type="text" size="1" maxlength="1">
   					</div>
   				</div>
   				<div class="row">
   					<div class="col">
-  						<svg class="candado bi bi-lock-fill text-danger" width="1em" height="1em" viewBox="0 0 20 20" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+  						<svg id="candado_e1" class="candado bi bi-lock-fill text-danger" width="1em" height="1em" viewBox="0 0 20 20" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
   						<rect width="11" height="9" x="4.5" y="8" rx="2"/>
   						<path fill-rule="evenodd" d="M6.5 5a3.5 3.5 0 117 0v3h-1V5a2.5 2.5 0 00-5 0v3h-1V5z" clip-rule="evenodd"/>
 						</svg>
-  						<svg class="check bi bi-check text-success" width="1.5em" height="1.5em" viewBox="0 0 20 20" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+  						<svg id="check_e1" class="check bi bi-check text-success" width="1.5em" height="1.5em" viewBox="0 0 20 20" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
   						<path fill-rule="evenodd" d="M15.854 5.646a.5.5 0 010 .708l-7 7a.5.5 0 01-.708 0l-3.5-3.5a.5.5 0 11.708-.708L8.5 12.293l6.646-6.647a.5.5 0 01.708 0z" clip-rule="evenodd"/>
 						</svg>
   					</div>
@@ -44,25 +47,25 @@
   				<h4>Enigma 2</h4>
   				<div class="row justify-content-center">
   					<div class="col-2">
-  						<input class="e2i1 form-control-lg" type="text" size="1" maxlength="1">
+  						<input id="e2i1" class="form-control-lg" type="text" size="1" maxlength="1">
   					</div>
   					<div class="col-2 ">
-  						<input class="e2i2 form-control-lg" type="text" size="1" maxlength="1">
+  						<input id="e2i2" class="form-control-lg" type="text" size="1" maxlength="1">
   					</div>
   					<div class="col-2">
-  						<input class="e2i3 form-control-lg" type="text" size="1" maxlength="1">
+  						<input id="e2i3" class="form-control-lg" type="text" size="1" maxlength="1">
   					</div>
   					<div class="col-2 ">
-  						<input class="e2i4 form-control-lg" type="text" size="1" maxlength="1">
+  						<input id="e2i4" class="form-control-lg" type="text" size="1" maxlength="1">
   					</div>
   				</div>
   				<div class="row">
   					<div class="col">
-  						<svg class="candado bi bi-lock-fill text-danger" width="1em" height="1em" viewBox="0 0 20 20" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+  						<svg id="candado_e2" class="candado bi bi-lock-fill text-danger" width="1em" height="1em" viewBox="0 0 20 20" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
   						<rect width="11" height="9" x="4.5" y="8" rx="2"/>
   						<path fill-rule="evenodd" d="M6.5 5a3.5 3.5 0 117 0v3h-1V5a2.5 2.5 0 00-5 0v3h-1V5z" clip-rule="evenodd"/>
 						</svg>
-  						<svg class="check bi bi-check text-success" width="1.5em" height="1.5em" viewBox="0 0 20 20" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+  						<svg id="check_e2" class="check bi bi-check text-success" width="1.5em" height="1.5em" viewBox="0 0 20 20" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
   						<path fill-rule="evenodd" d="M15.854 5.646a.5.5 0 010 .708l-7 7a.5.5 0 01-.708 0l-3.5-3.5a.5.5 0 11.708-.708L8.5 12.293l6.646-6.647a.5.5 0 01.708 0z" clip-rule="evenodd"/>
 						</svg>
   					</div>
@@ -72,22 +75,22 @@
   				<h4>Enigma 3</h4>
   				<div class="row justify-content-center">
   					<div class="col-2">
-  						<input class="e3i1 form-control-lg" type="text" size="1" maxlength="1">
+  						<input id="e3i1" class="form-control-lg" type="text" size="1" maxlength="1">
   					</div>
   					<div class="col-2 ">
-  						<input class="e3i2 form-control-lg" type="text" size="1" maxlength="1">
+  						<input id="e3i2" class="form-control-lg" type="text" size="1" maxlength="1">
   					</div>
   					<div class="col-2">
-  						<input class="e3i3 form-control-lg" type="text" size="1" maxlength="1">
+  						<input id="e3i3" class="form-control-lg" type="text" size="1" maxlength="1">
   					</div>
   				</div>
   				<div class="row">
   					<div class="col">
-  						<svg class="candado bi bi-lock-fill text-danger" width="1em" height="1em" viewBox="0 0 20 20" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+  						<svg id="candado_e3" class="candado bi bi-lock-fill text-danger" width="1em" height="1em" viewBox="0 0 20 20" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
   						<rect width="11" height="9" x="4.5" y="8" rx="2"/>
   						<path fill-rule="evenodd" d="M6.5 5a3.5 3.5 0 117 0v3h-1V5a2.5 2.5 0 00-5 0v3h-1V5z" clip-rule="evenodd"/>
 						</svg>
-  						<svg class="check bi bi-check text-success" width="1.5em" height="1.5em" viewBox="0 0 20 20" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+  						<svg id="check_e3" class="check bi bi-check text-success" width="1.5em" height="1.5em" viewBox="0 0 20 20" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
   						<path fill-rule="evenodd" d="M15.854 5.646a.5.5 0 010 .708l-7 7a.5.5 0 01-.708 0l-3.5-3.5a.5.5 0 11.708-.708L8.5 12.293l6.646-6.647a.5.5 0 01.708 0z" clip-rule="evenodd"/>
 						</svg>
   					</div>
@@ -97,16 +100,16 @@
   				<h4>Enigma 4</h4>
   				<div class="row">
   					<div class="col-12">
-  						<input class="e4i1 form-control-lg" type="text" size="1" maxlength="1">
+  						<input id="e4i1" class="form-control-lg" type="text" size="1" maxlength="1">
   					</div>
   				</div>
   				<div class="row">
   					<div class="col">
-  						<svg class="candado bi bi-lock-fill text-danger" width="1em" height="1em" viewBox="0 0 20 20" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+  						<svg id="candado_e4" class="candado bi bi-lock-fill text-danger" width="1em" height="1em" viewBox="0 0 20 20" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
   						<rect width="11" height="9" x="4.5" y="8" rx="2"/>
   						<path fill-rule="evenodd" d="M6.5 5a3.5 3.5 0 117 0v3h-1V5a2.5 2.5 0 00-5 0v3h-1V5z" clip-rule="evenodd"/>
 						</svg>
-  						<svg class="check bi bi-check text-success" width="1.5em" height="1.5em" viewBox="0 0 20 20" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+  						<svg id="check_e4" class="check bi bi-check text-success" width="1.5em" height="1.5em" viewBox="0 0 20 20" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
   						<path fill-rule="evenodd" d="M15.854 5.646a.5.5 0 010 .708l-7 7a.5.5 0 01-.708 0l-3.5-3.5a.5.5 0 11.708-.708L8.5 12.293l6.646-6.647a.5.5 0 01.708 0z" clip-rule="evenodd"/>
 						</svg>
   					</div>
@@ -115,10 +118,17 @@
   		</div>
   		
   		<div class="container">
-  			<button type="button" class="btn btn-info btn-block" style="margin-top:20px;"><span class="h2">Comprobar</span></button>
+  			<button id="boton_comprobar" type="button" class="btn btn-info btn-block" style="margin-top:20px;"><span class="h2">Comprobar</span></button>
   		</div>
   		
   	</div>
+
+    <div id = "oculto" class="jumbotron">
+      <div class="container">
+          <h3 id="mensaje" class="col text-center">¡Enorabuena! Has conseguido descifrar todos los enigmas. Ahora ve a tu maleta y busca un sobre</h3>
+      </div>
+    </div>
+    
     
     
 
@@ -127,5 +137,6 @@
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="cuenta_atras.js"></script>
   </body>
 </html>
