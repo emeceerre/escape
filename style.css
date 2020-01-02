@@ -1,0 +1,25 @@
+body {
+	font-family: 'ZCOOL QingKe HuangYou', cursive;
+	font-size: 1.5em;
+}
+h1 {
+	padding: 20px;
+}
+h4 {
+	margin-bottom: 10px;
+}
+.lado_abajo {
+	border-bottom: 2px dashed #000;
+}
+.espacio {
+	padding: 15px 0 15px 0;
+}
+   	
+.container-fluid {
+	padding: 0;
+	margin: 0;
+}
+.tiempo {
+    color: coral;
+}
+    
