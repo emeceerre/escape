@@ -20,7 +20,7 @@ $(document).ready(function() {
 	});
 
 	// en el momento que se pulse el botón de inicio, se hace visible el container
-	$('#boton_question').click(function(){
+	$('#question_img').click(function(){
 		localStorage.setItem("activado", true);
 		$('#boton_question').hide();
 		$('#main_container').show();
