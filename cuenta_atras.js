@@ -15,11 +15,15 @@ $(document).ready(function() {
 		realizar_cuenta_atras();
 	}
 
+	$(window).on("unload", function(e){
+
+	});
+
 	// en el momento que se pulse el botón de inicio, se hace visible el container
 	$('#boton_question').click(function(){
 		localStorage.setItem("activado", true);
-		$('#boton_question').show();
-		$('#main_container').hide();
+		$('#boton_question').hide();
+		$('#main_container').show();
 		$('.candado').hide();
 		$('.check').hide();
 		establecer_hora();
