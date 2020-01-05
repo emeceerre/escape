@@ -27,6 +27,7 @@ $(document).ready(function() {
 		$('.candado').hide();
 		$('.check').hide();
 		establecer_hora();
+		alert("Desde este momento tienes 24 horas para resolver los 4 Enigmas.");
 		realizar_cuenta_atras();
     });
 
@@ -90,7 +91,6 @@ $(document).ready(function() {
 	    reloj = setInterval(function () {
 	    	var ahora = new Date();
 	    	var res = (f_fin - ahora)/1000;
-	    	console.log(res);
 	        hours = parseInt((res /3600)%24, 10)
 	        minutes = parseInt((res / 60)%60, 10)
 	        seconds = parseInt(res % 60, 10);
@@ -102,7 +102,8 @@ $(document).ready(function() {
 	        display.text(hours +" : "+minutes + " : " + seconds);
 	        if (res <= 10){
 	        	display.addClass('text-danger');
-	        } else if (res == 0){
+	        } 
+	        if (res == 0){
 	        	detenerReloj();
 	        }
 	        	        
@@ -163,7 +164,6 @@ $(document).ready(function() {
 			localStorage.setItem("e2i4", e2i4);
 			correctos+=1;
 		} else {
-			console.log("Enigma 2 mal");
 			$('#candado_e2').show();
 			$('#check_e2').hide();
 			$('#e2i1').removeClass("btn-outline-success").addClass("btn-outline-danger");
@@ -189,7 +189,6 @@ $(document).ready(function() {
 			correctos+=1;
 			
 		} else {
-			console.log("Enigma 3 mal");
 			$('#candado_e3').show();
 			$('#check_e3').hide();
 			$('#e3i1').removeClass("btn-outline-success").addClass("btn-outline-danger");
@@ -207,7 +206,6 @@ $(document).ready(function() {
 			localStorage.setItem("e4i1", e4i1);
 			correctos+=1;
 		} else {
-			console.log("Enigma 4 mal");
 			$('#candado_e4').show();
 			$('#check_e4').hide();
 			$('#e4i1').removeClass("btn-outline-success").addClass("btn-outline-danger");
